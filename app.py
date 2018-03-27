@@ -30,9 +30,11 @@ def getWeather():
     'windSpeed': daily['data'][0]['windSpeed'],
     'temperatureHigh': daily['data'][0]['temperatureHigh'],
     'temperatureLow': daily['data'][0]['temperatureLow'],
-    'average_temperature': (
+    'average_temperature': round((
       daily['data'][0]['temperatureHigh'] + daily['data'][0]['temperatureLow']
-      ) / 2,
+      ) / 2, 2),
+    'icon': daily['data'][0]['icon'],
+    'summary': daily['data'][0]['summary'],
     'humidity': daily['data'][0]['humidity'],
     'timezone': fio.timezone
   }
