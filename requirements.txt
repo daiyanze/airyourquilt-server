@@ -7,9 +7,9 @@ forecastiopy==0.22
 gunicorn==19.7.1
 idna==2.6
 itsdangerous==0.24
-Jinja2==2.10
+Jinja2>=2.10.1
 MarkupSafe==1.0
-requests==2.18.4
+requests>=2.20.0
 six==1.11.0
-urllib3==1.22
+urllib3>=1.23
 Werkzeug==0.14.1
